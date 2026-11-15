@@ -1,0 +1,56 @@
+{
+  "name": "pebble-fit",
+  "author": "Secondthought",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "pebble": {
+    "displayName": "Pebble Fit",
+    "uuid": "819a3850-0f28-4b0a-b18d-3ef677db2215",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+      "CMD",
+      "DIST",
+      "GPS",
+      "STEPS_PER_MILE",
+      "COLOR_BG",
+      "COLOR_FG",
+      "COLOR_TEXT"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "MENU_ICON",
+          "file": "images/menu_icon.png",
+          "menuIcon": true
+        }
+      ]
+    },
+    "capabilities": [
+      "location",
+      "health"
+    ]
+  },
+  "dependencies": {
+    "@rebble/clay": "1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awhogue/pebble-fit.git"
+  }
+}
